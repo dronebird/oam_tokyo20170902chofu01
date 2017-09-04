@@ -18,6 +18,10 @@ https://github.com/dronebird/oam_tokyo20170902chofu01/tree/master/img
 
 `https://dronebird.github.io/oam_tokyo20170902chofu01/xyztiles/{z}/{x}/{y}.png`
 
+XYZタイル画像の読み込み例 on OpenStreetMap iD Editor （カスタムレイヤとして設定）
+<img width="1680" alt="2017-09-04 13 11 32" src="https://user-images.githubusercontent.com/416977/30011492-a33a4388-9172-11e7-8586-0f1da7c55d6d.png">
+
+
 
 ## 著作権
 © CrisisMappers Japan/DRONEBIRD, CC BY 4.0/OSM traceable
