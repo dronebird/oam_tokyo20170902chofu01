@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Orthomosaic</title>
+        <meta charset="utf-8" />
+        <style>
+            html, body, #map {
+                height: 100%;
+                margin: 0px;
+                padding: 0px
+            }
+        </style>
+
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+            var map;
+
+            function initialize() {
+                var options = {
+                    zoom: 14,
+                    center: new google.maps.LatLng(35.6412, 139.54),
+                    mapTypeId: google.maps.MapTypeId.SATELLITE
+                };
+
+                map = new google.maps.Map(document.getElementById("map"), options);
+
+                var bounds = {
+                    14: [[14542, 14542], [6453, 6454]],
+                    15: [[29084, 29085], [12907, 12908]],
+                    16: [[58169, 58171], [25815, 25816]],
+                    17: [[116338, 116342], [51630, 51632]],
+                    18: [[232677, 232685], [103260, 103264]],
+                    19: [[465355, 465370], [206520, 206529]],
+                    20: [[930711, 930741], [413041, 413058]],
+                    21: [[1861423, 1861483], [826082, 826117]],
+                    22: [[3722847, 3722967], [1652164, 1652234]]
+                };
+
+                var imageMapType = new google.maps.ImageMapType({
+                    getTileUrl: function(coord, zoom) {
+                        if (zoom < 14 || zoom > 22 ||
+                            bounds[zoom][0][0] > coord.x || coord.x > bounds[zoom][0][1] ||
+                            bounds[zoom][1][0] > coord.y || coord.y > bounds[zoom][1][1]) {
+                            return null;
+                        }
+
+                        return zoom + "/" + coord.x + "/" + coord.y + ".png";
+                    },
+                    tileSize: new google.maps.Size(256, 256)
+                });
+
+                map.overlayMapTypes.push(imageMapType);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </head>
+    <body>
+        <div id="map"></div>
+    </body>
+</html>
