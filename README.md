@@ -13,9 +13,6 @@
 https://github.com/dronebird/oam_tokyo20170902chofu01/tree/master/img
 
 
-# XYZtiles
-https://dronebird.github.io/oam_tokyo20170902chofu01/
-
 ## XYZタイル画像 in 多摩川河川敷（調布市） 2017/09/02 
 * z14-22 uploaded
 
