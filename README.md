@@ -29,4 +29,4 @@ XYZタイル画像の読み込み例 on OpenStreetMap iD Editor （カスタム�
 ## 著作権
 © CrisisMappers Japan/DRONEBIRD, CC BY 4.0/OSM traceable
 
-OSM Source TAG: `source = oam_shizuoka20170822mtfuji`
+OSM Source TAG: `source = oam_tokyo20170902chofu01`
