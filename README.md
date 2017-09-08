@@ -1,6 +1,9 @@
 # oam_tokyo20170902chofu01
 東京都・調布市合同総合防災訓練 9/2 試験飛行
 
+* XYZtile: `https://dronebird.github.io/oam_tokyo20170902chofu01/xyztiles/{z}/{x}/{y}.png`
+* [on OpenAerialMap](https://map.openaerialmap.org/#/139.54010009765625,35.641673184600585,16/1330021122131/59b267fd46e19904aab0aaea?_k=kwphm6)
+
 
 ![screenshots_dronebird](https://user-images.githubusercontent.com/416977/29995238-e3f3e5e0-901f-11e7-83cc-40c5fb9b1075.jpg)
 
